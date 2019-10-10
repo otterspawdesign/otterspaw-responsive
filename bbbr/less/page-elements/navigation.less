@@ -1,0 +1,102 @@
+header{
+    width: 100%;
+    display: flex;
+
+    .nav-logo{
+        width:100%;
+        @media @tablet{
+            display:none;
+        }
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        font-size: @nav-link-font-size;
+
+        @media @phone{
+            .navbarItemsMediaQueryFlexProperties();
+          }
+        .mainNav{
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            
+            @media @tablet{
+                display:none;
+            }
+        }
+        .registerLogin{
+            display: flex;
+            justify-content: space-evenly;
+            width: 30%;
+           
+            
+            @media @tablet{
+                display:none;
+            }
+        }
+    }
+        a {
+        color:@acccent-secondary-light;
+        font-family: @nav-font;
+        text-shadow: 1px 1px #000000;
+        background-image: linear-gradient(@accent-seconday-dark,white);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 3px;
+        transition: background-size .5s;
+        padding-right: 2rem;
+        &:hover{
+          background-size: 100% 2px;
+          cursor: pointer;
+        }
+        
+        
+        @media @phone{
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.aftertablet{
+    display:none;
+
+    @media @tablet{
+        display: contents;
+    }
+}
+.navhamburger{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(67, 59, 188, 1);
+    a{
+        padding-bottom: 5rem;
+    }
+    @media @desktop{
+        display: none;
+    }
+}
+.headerTabletQuery{
+    display: flex;
+    width: 100%;
+ 
+    .nav-logo-tablet{
+        width: 75%
+    }
+
+    @media @desktop{
+        display: none;
+    }
+
+}
+.hamburger{
+
+    @media @desktop{
+        display: none;
+    }
+}

@@ -1,0 +1,176 @@
+.pitchDescription{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: fadein;
+    animation-duration: 2s;
+    margin-top: 8rem;
+    margin-bottom: 12rem;
+
+
+    @media @tablet{
+        flex-direction: column;
+        margin-bottom: 5rem;
+        box-shadow: 1px 1px rgba(0,0,0,0.1);
+    }
+    .button-text-group-header-landing{
+
+        display: flex;
+        width: 400%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0rem 3rem 5rem 3rem;
+        .textmain{
+            flex-direction: column;
+            width: 100%;
+        }
+        h1{
+            color:@base-secondary-dark;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        button{
+            margin-left: 100%;
+            margin-top: 1.5rem;
+            width: 13rem;
+        
+        }
+        @media @tablet{
+            width: 70%;
+            padding-top: 5rem;
+
+        }
+    }
+
+}
+
+
+.blockimages{
+    width: 30%;
+    margin: 3rem;
+    border-radius: 50%;
+    @media @phone{
+        width: 50%;
+    }
+} 
+
+.contentblock{
+    margin-bottom: 5rem;
+    width: 50%;
+    padding-left: 1rem;
+   
+    @media @tablet{
+        width: 70%;
+    }
+}
+
+.solutionExplaination{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .icon{
+        border-radius: 100%;
+        width: 5%;
+    }
+   
+    @media @phone{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+}
+
+.finalCallToAction{
+    margin-top: 5rem;
+    h3, .buttonGroup{
+        margin: 0 auto;
+        text-align: center;
+        color: @base-secondary-dark;
+        padding-bottom: 1rem;
+        padding-top: 3rem;
+    }
+    h4{
+        text-align: center;
+
+    }
+
+}
+
+.fullElevatorPitch, .finalCallToAction{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    .icon{
+        border-radius: 100%;
+        width: 5%;
+    }
+    
+    @media @phone{
+        .homepageSectionMediaQueryFlexAndPositionProperties();
+    }
+}
+
+
+.mainFeatures, .specs{
+    box-shadow: 2px 2px #00000018;
+    border-radius: 10px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-right: 3rem;
+    border: 1px solid rgb(235, 232, 232);
+    width: 70%;
+    .contentblock{
+       margin: 0 auto;
+        width: 70%;
+    }
+    @media @tablet{
+        margin-bottom: 3rem;
+    }
+
+
+
+}
+
+.sharedWidthSectionInDesktop{
+
+    padding-top: 4rem;
+
+}
+
+.sharedWidthSectionInDesktop, .mainFeatures, .specs{
+    display:flex;
+    justify-content: center;
+    
+    h3{
+        text-align: center;
+    }
+
+    @media @tablet{
+        flex-direction: column;
+        align-items: center;
+        .contentblock{
+            width:80%;
+        }
+    }
+}
+
+
+.teamfull{
+ display: flex;
+ justify-content: center;
+ align-content: center;
+ align-items: flex-start;
+ width: 100%;
+ margin: 0 auto;
+
+}
+
+.teamsection{
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
