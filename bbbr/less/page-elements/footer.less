@@ -1,0 +1,52 @@
+footer{
+    display:flex;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    align-content: center;
+    background:@accent-seconday-dark;
+    padding: 1rem;
+
+    @media @tablet{
+        column-count: 3;
+        display: block;
+        padding: 3px;
+    }
+    a{
+    margin-right: 2rem;
+    color:@acccent-secondary-light;
+    font-family: @nav-font;
+
+        @media @tablet{
+            margin-right: 1rem;
+            display: block;
+            padding-left: 3rem;
+            padding-top: 1rem;
+        }
+    }
+    p{
+        width: 75%;
+        padding-right: 5rem;
+        padding-left: 1rem;
+        color:@acccent-secondary-light;
+
+        @media @tablet{
+            font-size: 1rem;
+            display: block;
+            padding-top: 1rem;
+            padding-left: 3rem;
+            
+        }
+    }
+
+        .lambdalogo{
+            max-height: 150px;
+            max-width:200px;
+            border-radius: 10px;
+            width: 50%;
+            margin-top: 2rem;
+           
+        }
+    
+    
+}
